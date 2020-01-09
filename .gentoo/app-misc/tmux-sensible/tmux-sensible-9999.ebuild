@@ -13,6 +13,9 @@ if [[ ${PV} = *9999* ]]; then
 	EGIT_BRANCH="master"
 else
 	SRC_URI="https://github.com/tmux-plugins/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	PATCHES=(
+		"${FILESDIR}/tmux-invalid-options-3.0.0.patch"
+	)
 fi
 
 KEYWORDS=""
@@ -23,10 +26,6 @@ RDEPEND="app-misc/tmux"
 DEPEND=""
 
 DOCS=( CHANGELOG.md LICENSE.md README.md )
-
-PATCHES=(
-	"${FILESDIR}/tmux-invalid-options.patch"
-)
 
 src_install() {
 	einstalldocs
