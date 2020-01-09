@@ -16,5 +16,6 @@
 		<doc>https://github.com/tmux-plugins/tmux-sensible/wiki</doc>
 	</upstream>
 	<longdescription lang="en">
+		A set of tmux options that should be acceptable to everyone.
 	</longdescription>
 </pkgmetadata>
