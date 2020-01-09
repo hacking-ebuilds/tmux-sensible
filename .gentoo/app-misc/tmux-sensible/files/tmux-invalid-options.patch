@@ -1,0 +1,28 @@
+--- tmux-sensible/sensible.tmux
++++ tmux-sensible/sensible.tmux
+@@ -64,10 +64,10 @@
+ 	# OPTIONS
+ 
+ 	# enable utf8
+-	tmux set-option -g utf8 on
++	#tmux set-option -g utf8 on
+ 
+ 	# enable utf8 in tmux status-left and status-right
+-	tmux set-option -g status-utf8 on
++	#tmux set-option -g status-utf8 on
+ 
+ 	# address vim mode switching delay (http://superuser.com/a/252717/65504)
+ 	if server_option_value_not_changed "escape-time" "500"; then
+@@ -95,9 +95,9 @@
+ 	fi
+ 
+ 	# upgrade $TERM, tmux 1.9
+-	if option_value_not_changed "default-terminal" "screen"; then
+-		tmux set-option -g default-terminal "screen-256color"
+-	fi
++#	if option_value_not_changed "default-terminal" "screen"; then
++#		tmux set-option -g default-terminal "screen-256color"
++#	fi
+ 	# upgrade $TERM, tmux 2.0+
+ 	if server_option_value_not_changed "default-terminal" "screen"; then
+ 		tmux set-option -s default-terminal "screen-256color"

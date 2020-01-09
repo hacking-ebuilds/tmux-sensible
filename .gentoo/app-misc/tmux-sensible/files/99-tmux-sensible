@@ -1,0 +1,3 @@
+# Installed by app-misc/tmux-sensible
+
+run-shell /usr/lib/tmux-sensible/sensible.tmux
